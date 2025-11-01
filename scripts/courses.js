@@ -1,5 +1,3 @@
-// scripts/courses.js
-// Array de cursos (modifica completed: true si ya los completaste)
 document.addEventListener('DOMContentLoaded', () => {
   const courses = [
     { code: "WDD130", title: "Introduction to Web", subject: "WDD", credits: 3, completed: true },
@@ -34,8 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const total = arr.reduce((sum, x) => sum + x.credits, 0);
     if (totalValueEl) totalValueEl.textContent = total;
   }
-
-  // handlers filtros
   btnAll?.addEventListener('click', () => {
     render(courses);
     setActive(btnAll);
@@ -55,8 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
     [btnAll, btnCse, btnWdd].forEach(b => b?.classList.remove('active'));
     btn?.classList.add('active');
   }
-
-  // render inicial
   render(courses);
   setActive(btnAll);
 });
