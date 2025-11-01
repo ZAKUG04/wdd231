@@ -53,7 +53,7 @@
 /* 🌐 Ajuste general fuera del media query */
 header, main, footer {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto auto;
 }
 
 body {
