@@ -1,3 +1,6 @@
+/* ==============================
+   Larger view (min-width: 640px)
+============================== */
 @media (min-width: 640px) {
   #menu {
     display: none;
@@ -10,7 +13,6 @@
   .navigation {
     display: flex !important;
     flex-direction: row;
-    justify-content: center;
     position: static;
     width: auto;
   }
@@ -19,7 +21,6 @@
     border: none;
     padding: 1rem 1.5rem;
   }
-
 
   main {
     display: grid;
@@ -48,15 +49,4 @@
   .course-card {
     width: 30%;
   }
-}
-
-/* 🌐 Ajuste general fuera del media query */
-header, main, footer {
-  max-width: 1200px;
-  margin: auto auto;
-  width: 100%;
-}
-
-body {
-  background-color: #f8f8f8;
 }
