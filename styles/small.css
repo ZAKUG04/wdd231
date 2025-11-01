@@ -1,0 +1,180 @@
+/* ==============================
+   Base (mobile-first)
+============================== */
+
+:root {
+  --primary-color: #222;
+  --secondary-color: #f5f5f5;
+  --accent-color: #444;
+  --text-color: #333;
+  --highlight-color: #0059ff;
+  --max-width: 900px;
+  --font: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: white;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 1rem;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  width: 35px;
+  height: 35px;
+}
+
+#menu {
+  background: url("../images/menu.svg") no-repeat center;
+  background-size: contain;
+  border: none;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.navigation {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: var(--primary-color);
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  border-top: 1px solid #444;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  background-color: var(--highlight-color);
+}
+
+/* MAIN CONTENT */
+main {
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+section {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+section h2 {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+/* PHOTO */
+.photo img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* COURSES */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filters button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: var(--highlight-color);
+}
+
+#course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.course-card {
+  background-color: #eaeaea;
+  padding: 0.7rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.course-card.completed {
+  background-color: #cce5ff;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 0.9rem;
+  border-top: 3px solid var(--highlight-color);
+}
+
+footer .social {
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+.navigation.open {
+  display: flex;
+}

@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231 - Home</title>
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Course Home Page for WDD231 - Web Frontend Development I">
+  <meta name="author" content="Tu Nombre">
+  <title>WDD 231 - Course Home Page</title>
 
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
 </head>
 <body>
-<header>
-  <img src="images/logo.svg" alt="Site logo">
-  <span>Tu Nombre</span>
-  <button id="menu"></button> <!-- para el menú hamburger -->
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Chamber Project</a>
-    <a href="#">Final Project</a>
-  </nav>
-</header>
+  <header>
+    <div class="logo">
+      <img src="images/logo.svg" alt="Site Logo">
+      <span>Tu Nombre</span>
+    </div>
+    <button id="menu" aria-label="Menu"></button>
+    <nav class="navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="#">Chamber Project</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
 
-<main>
-  <h1>Home</h1>
-  
-  <section id="about-me">
-    <h2>About Me</h2>
-    <p>Tu texto de presentación</p>
-  </section>
+  <main>
+    <h1>Home</h1>
 
-  <section id="student-photo">
-    <h2>Student Photo</h2>
-    <img src="images/tu-foto.jpg" alt="Student Photo">
-  </section>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm a student of Web Frontend Development I. I enjoy learning about HTML, CSS, and JavaScript. 
+        This page shows my progress through the course.
+      </p>
+    </section>
 
-  <section id="courses">
-    <h2>Web Certificate Courses</h2>
-    <!-- Botones All / CSE / WDD -->
-    <!-- Aquí se mostrarán los cursos con JS -->
-  </section>
-</main>
+    <section class="photo">
+      <h2>Student Photo</h2>
+      <img src="images/profile.jpg" alt="Student Photo">
+    </section>
 
-<footer>
-  <p>
-    &copy; <span id="currentyear"></span> Tu Nombre • Ecuador
-  </p>
-  <p id="lastModified"></p>
-  <div class="social">
-    <a href="https://github.com/TUUSUARIO" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/TUUSUARIO" target="_blank">LinkedIn</a>
-  </div>
-</footer>
+    <section class="courses">
+      <h2>Web Certificate Courses</h2>
+      <div class="filters">
+        <button id="all">All</button>
+        <button id="cse">CSE</button>
+        <button id="wdd">WDD</button>
+      </div>
+      <div id="course-list"></div>
+      <p id="total-credits">The total credits for courses listed above is 0</p>
+    </section>
+  </main>
 
-
-  <script src="scripts/main.js"></script>
+  <footer>
+    <div class="social">
+      <a href="https://github.com/ZAKUG04" target="_blank">GitHub</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+    <p>&copy; <span id="currentyear"></span> • Tu Nombre • Ecuador</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>
