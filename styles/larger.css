@@ -1,6 +1,3 @@
-/* ==============================
-   Larger view (min-width: 640px)
-============================== */
 @media (min-width: 640px) {
   #menu {
     display: none;
@@ -50,11 +47,13 @@
     width: 30%;
   }
 }
+
+/* 🌐 Ajuste general fuera del media query */
 header, main, footer {
-  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  background-color: #f8f8f8;
 }

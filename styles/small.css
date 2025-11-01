@@ -56,7 +56,9 @@ header {
   color: white;
   cursor: pointer;
 }
-
+#menu i {
+  pointer-events: none;
+}
 #menu:hover i {
   color: var(--highlight-color);
 }
