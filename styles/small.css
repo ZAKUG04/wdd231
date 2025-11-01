@@ -25,7 +25,6 @@ body {
   background-color: white;
   max-width: var(--max-width);
   margin: 0 auto;
-  width: 100%;
 }
 
 /* HEADER */
