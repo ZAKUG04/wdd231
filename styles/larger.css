@@ -50,3 +50,6 @@
     width: 30%;
   }
 }
+header, main, footer {
+  width: 100%;
+}
