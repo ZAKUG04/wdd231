@@ -1,29 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD231 - Home</title>
-  <link rel="stylesheet" href="styles/base.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 - Home</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
 </head>
 <body>
-  <header>
-    <h1>Welcome to WDD231</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <img src="images/logo.svg" alt="Site logo">
+  <span>Tu Nombre</span>
+  <button id="menu"></button> <!-- para el menú hamburger -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Chamber Project</a>
+    <a href="#">Final Project</a>
+  </nav>
+</header>
 
-  <main>
-    <p>This is your starting page for the course project.</p>
-  </main>
+<main>
+  <h1>Home</h1>
+  
+  <section id="about-me">
+    <h2>About Me</h2>
+    <p>Tu texto de presentación</p>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 - Your Name</p>
-  </footer>
+  <section id="student-photo">
+    <h2>Student Photo</h2>
+    <img src="images/tu-foto.jpg" alt="Student Photo">
+  </section>
+
+  <section id="courses">
+    <h2>Web Certificate Courses</h2>
+    <!-- Botones All / CSE / WDD -->
+    <!-- Aquí se mostrarán los cursos con JS -->
+  </section>
+</main>
+
+<footer>
+  <p>
+    &copy; <span id="currentyear"></span> Tu Nombre • Ecuador
+  </p>
+  <p id="lastModified"></p>
+  <div class="social">
+    <a href="https://github.com/TUUSUARIO" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/TUUSUARIO" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+
 
   <script src="scripts/main.js"></script>
 </body>
