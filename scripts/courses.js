@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function render(arr) {
     if (!listEl) return;
     listEl.innerHTML = '';
+
     arr.forEach(c => {
       const card = document.createElement('article');
       card.className = 'course-card';
@@ -29,8 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
       listEl.appendChild(card);
     });
 
-    const total = arr.reduce((sum, x) => sum + x.credits, 0);
-    if (totalValueEl) totalValueEl.textContent = total;
+    const totalCompleted = arr
+      .filter(x => x.completed)
+      .reduce((sum, x) => sum + x.credits, 0);
+
+    if (totalValueEl) totalValueEl.textContent = totalCompleted;
+  }
+
+  function setActive(btn) {
+    [btnAll, btnCse, btnWdd].forEach(b => b?.classList.remove('active'));
+    btn?.classList.add('active');
   }
   btnAll?.addEventListener('click', () => {
     render(courses);
@@ -47,10 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setActive(btnWdd);
   });
 
-  function setActive(btn) {
-    [btnAll, btnCse, btnWdd].forEach(b => b?.classList.remove('active'));
-    btn?.classList.add('active');
-  }
   render(courses);
   setActive(btnAll);
 });
