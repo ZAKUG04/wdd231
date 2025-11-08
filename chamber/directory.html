@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta name="description" content="Directory of local businesses for the Madrid Chamber of Commerce." >
+  <meta name="author" content="Marie Martínez" >
+
+  <!-- Facebook Open Graph -->
+  <meta property="og:title" content="Madrid Chamber of Commerce Directory" >
+  <meta property="og:description" content="Discover local businesses and organizations in Madrid." >
+  <meta property="og:image" content="https://username.github.io/wdd231/chamber/images/og-image.jpg">
+  <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html" >
+
+  <title>Madrid Chamber Directory</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" >
+  <link rel="stylesheet" href="css/normalize.css" >
+  <link rel="stylesheet" href="css/directory.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script defer src="js/directory.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="images/logo.png" alt="Madrid Chamber of Commerce logo" class="logo" >
+      <h1>Madrid Chamber of Commerce</h1>
+      <button id="menuButton" aria-label="Menu">&#9776;</button>
+      <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="directory.html" class="active">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="discover.html">Discover</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="view-toggle">
+      <button id="gridView">Grid View</button>
+      <button id="listView">List View</button>
+    </section>
+
+    <section id="memberContainer" class="grid-view">
+      <!-- Member cards will be loaded here -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h3>Madrid Chamber of Commerce</h3>
+        <p>Gran Vía 123<br>Madrid, España</p>
+        <p>Email: info@madridcc.org<br>Phone: +34 91 555 2300</p>
+      </div>
+
+      <div class="social">
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+    </div>
+    <p class="copyright">
+      &copy; <span id="year"></span> Madrid Chamber of Commerce | Marie Martínez | WDD231<br>
+      Last Modification: <span id="lastModified"></span>
+    </p>
+  </footer>
+</body>
+</html>

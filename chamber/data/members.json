@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Café Sol",
+    "address": "Calle Mayor 12, Madrid",
+    "phone": "+34 91 555 0101",
+    "website": "https://cafesol.example.com",
+    "image": "cafe.jpg",
+    "membership": "Gold"
+  },
+  {
+    "name": "Madrid Tech Solutions",
+    "address": "Paseo de la Castellana 45, Madrid",
+    "phone": "+34 91 555 0102",
+    "website": "https://madridtech.example.com",
+    "image": "madrid-tech.jpg",
+    "membership": "Silver"
+  },
+  {
+    "name": "Viajes Iberia",
+    "address": "Gran Vía 78, Madrid",
+    "phone": "+34 91 555 0103",
+    "website": "https://viajesiberia.example.com",
+    "image": "viajes-iberia.jpg",
+    "membership": "Member"
+  },
+  {
+    "name": "Mercado Central",
+    "address": "Plaza España 22, Madrid",
+    "phone": "+34 91 555 0104",
+    "website": "https://mercadocentral.example.com",
+    "image": "mercado.jpg",
+    "membership": "Silver"
+  },
+  {
+    "name": "Construcciones Sol",
+    "address": "Calle Serrano 67, Madrid",
+    "phone": "+34 91 555 0105",
+    "website": "https://construccionsol.example.com",
+    "image": "construcciones.jpg",
+    "membership": "Gold"
+  },
+  {
+    "name": "Spa Oasis Madrid",
+    "address": "Calle Alcalá 3, Madrid",
+    "phone": "+34 91 555 0106",
+    "website": "https://oasismadrid.example.com",
+    "image": "spa-oasis.jpg",
+    "membership": "Member"
+  },
+  {
+    "name": "Hotel Cielo Azul",
+    "address": "Puerta del Sol 90, Madrid",
+    "phone": "+34 91 555 0107",
+    "website": "https://hotelcielo.example.com",
+    "image": "hotel-cielo.jpg",
+    "membership": "Gold"
+  }
+]
