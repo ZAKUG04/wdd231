@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Madrid Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <img src="images/logo.png" alt="Madrid Chamber Logo" class="logo" >
+            <span class="site-title">Madrid Chamber of Commerce</span>
+        </div>
+    </header>
+
+    <main class="thankyou-container">
+        <section class="thankyou-card">
+            <h1>¡Gracias por unirte!</h1>
+            <p>Tu solicitud de membresía ha sido registrada exitosamente.</p>
+            <p>Nos pondremos en contacto contigo pronto con más información.</p>
+
+            <a href="index.html" class="return-home">Volver al inicio</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Madrid Chamber of Commerce</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

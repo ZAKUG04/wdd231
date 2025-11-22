@@ -1,0 +1,159 @@
+/* VARIABLES */
+:root{
+  --primary:#2e2e2e;
+  --accent:#9fcc2e;
+  --muted:#f5f5f5;
+  --card-bg:#ffffff;
+  --radius:12px;
+  --gap:1rem;
+  --max-width:1200px;
+}
+
+/* GRID PRINCIPAL */
+.join-grid{
+  max-width:var(--max-width);
+  margin:24px auto;
+  padding:0 12px;
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+/* FORM */
+.form-section{
+  background:var(--card-bg);
+  padding:24px;
+  border-radius:var(--radius);
+  box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.form-section h2{
+  margin-top:0;
+  margin-bottom:12px;
+}
+
+/* Inputs */
+.form-section label{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:16px;
+  font-weight:600;
+  color:var(--primary);
+}
+
+.form-section input,
+.form-section textarea,
+.form-section select{
+  margin-top:6px;
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  font-size:1rem;
+}
+
+.form-section textarea{ min-height:110px; resize:vertical; }
+
+.form-section button[type="submit"]{
+  background:var(--accent);
+  color:var(--primary);
+  padding:12px 16px;
+  border:none;
+  border-radius:10px;
+  font-weight:700;
+  cursor:pointer;
+  width:100%;
+  font-size:1.1rem;
+}
+
+/* CARDS DE MEMBRESÍA */
+.membership-cards{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:18px;
+}
+
+.member-card{
+  background:var(--card-bg);
+  padding:20px;
+  border-radius:var(--radius);
+  text-align:center;
+  box-shadow:0 2px 8px rgba(0,0,0,0.06);
+  opacity:0;
+  animation:fadeUp 0.8s ease-out forwards;
+}
+
+.member-card h3{ margin-top:0; }
+
+.member-card button{
+  margin-top:10px;
+  background:var(--accent);
+  border:none;
+  padding:10px 14px;
+  border-radius:10px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+/* Animación */
+.member-card:nth-child(1){ animation-delay:0.1s }
+.member-card:nth-child(2){ animation-delay:0.25s }
+.member-card:nth-child(3){ animation-delay:0.4s }
+.member-card:nth-child(4){ animation-delay:0.55s }
+
+@keyframes fadeUp{
+  0%{ opacity:0; transform:translateY(24px); }
+  100%{ opacity:1; transform:translateY(0); }
+}
+
+/* MODALS */
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.5);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  z-index:1000;
+}
+
+.modal-content{
+  background:#fff;
+  padding:24px;
+  border-radius:var(--radius);
+  max-width:500px;
+  width:100%;
+  text-align:left;
+}
+
+.close-modal{
+  margin-top:12px;
+  background:var(--accent);
+  color:var(--primary);
+  padding:10px 14px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:700;
+}
+
+/* DESKTOP */
+@media(min-width:768px){
+  .join-grid{
+    flex-direction:row;
+  }
+
+  .form-section{
+    flex:1.2;
+  }
+
+  .membership-cards{
+    flex:1;
+    position:sticky;
+    top:20px;
+    height:fit-content;
+  }
+}
+
+
+
