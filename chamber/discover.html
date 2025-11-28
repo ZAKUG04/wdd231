@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <title>Discover | Madrid Chamber of Commerce</title>
+
+  <!-- estilo principal (el que me compartiste) -->
+  <link rel="stylesheet" href="css/index.css">
+
+  <!-- estilos específicos (mínimos) -->
+  <link rel="stylesheet" href="css/discover.css">
+
+  <!-- script de la página -->
+  <script src="js/discover.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-title">
+        <img src="images/logo.png" alt="Madrid Chamber Logo" class="logo">
+        <h1>Madrid Chamber of Commerce</h1>
+      </div>
+
+      <button id="menuButton" aria-label="Toggle menu" class="menu-btn">☰</button>
+
+      <nav id="navMenu" class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="discover.html" class="active">Discover</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Discover Madrid</h2>
+
+    <!-- Mensaje (card) que muestra localStorage -->
+    <section id="visitMessage" class="card"></section>
+
+    <!-- Aquí se inyectan las tarjetas -->
+    <section id="discoverGrid" class="spotlight-grid"></section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <h4>Madrid Chamber of Commerce</h4>
+        <address>
+          Gran Vía 123<br>
+          Madrid, España
+        </address>
+        <p>Email: <a href="mailto:info@madridcc.org">info@madridcc.org</a><br>
+        Phone: +34 91 555 2300</p>
+      </div>
+
+      <div class="footer-meta">
+        <p>&copy; <span id="year"></span> Madrid Chamber of Commerce | Nefi Zambrano | WDD231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -4,11 +4,6 @@ const $ = sel => document.querySelector(sel);
 const $$ = sel => Array.from(document.querySelectorAll(sel));
 
 /* ---------- menu toggle (mobile only) ---------- */
-const menuBtn = $('#menuButton');
-const navMenu = $('#navMenu');
-menuBtn && menuBtn.addEventListener('click', () => {
-  navMenu.classList.toggle('show');
-});
 
 /* ---------- footer dynamic values ---------- */
 const yearSpan = $('#year');
@@ -114,3 +109,9 @@ async function loadSpotlights() {
   }
 }
 loadSpotlights();
+// Hamburger menu
+const menuButton = document.getElementById("menuButton");
+const navMenu = document.getElementById("navMenu");
+menuButton.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
+});

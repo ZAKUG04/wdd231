@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Santiago Bernabéu Stadium",
+        "image": "images/discover/image.png",
+        "description": "Home of Real Madrid, an iconic stadium offering tours and a modern museum."
+    },
+    {
+        "name": "El Rastro",
+        "image": "images/discover/rastro.jpg",
+        "description": "Madrid’s most famous open-air flea market, held every Sunday."
+    },
+    {
+        "name": "Matadero Madrid",
+        "image": "images/discover/matadero.jpg",
+        "description": "A former slaughterhouse transformed into a cultural and arts center."
+    },
+    {
+        "name": "Círculo de Bellas Artes",
+        "image": "images/discover/Circulo.jpg",
+        "description": "A cultural center with one of the best rooftop views of Madrid."
+    },
+    {
+        "name": "Casa de Campo",
+        "image": "images/discover/casa.jpg",
+        "description": "The largest park in Madrid, ideal for biking, rowing, and outdoor activities."
+    },
+    {
+        "name": "Puerta de Alcalá",
+        "image": "images/discover/puerta.jpg",
+        "description": "A monumental neoclassical gate and one of Madrid's most photographed landmarks."
+    },
+    {
+        "name": "Barrio de Malasaña",
+        "image": "images/discover/barrio.jpg",
+        "description": "Trendy neighborhood full of cafes, murals, thrift shops, and nightlife."
+    },
+    {
+        "name": "Catedral de la Almudena",
+        "image": "images/discover/catedral.jpg",
+        "description": "Madrid’s main cathedral featuring beautiful architecture and a museum."
+    }
+]
