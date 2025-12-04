@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <title>Formulario enviado</title>
+  <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+  <main class="shell">
+    <h1>Gracias por tu envío</h1>
+    <div id="results"></div>
+    <p><a href="index.html">← Volver al inicio</a></p>
+  </main>
+
+  <script>
+    // read URLSearchParams and render
+    const params = new URLSearchParams(window.location.search);
+    const out = document.getElementById('results');
+    if ([...params].length === 0) {
+      out.innerHTML = '<p>No se enviaron datos.</p>';
+    } else {
+      const list = document.createElement('dl');
+      [...params].forEach(([k,v]) => {
+        const dt = document.createElement('dt');
+        dt.textContent = k;
+        const dd = document.createElement('dd');
+        dd.textContent = v;
+        list.appendChild(dt);
+        list.appendChild(dd);
+      });
+      out.appendChild(list);
+    }
+  </script>
+</body>
+</html>

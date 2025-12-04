@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Leg Press",
+    "category": "Lower Body",
+    "image": "images/press_leg.png",
+    "description": "Strengthens quadriceps, glutes and hamstrings with controlled lower-body pushing movements."
+  },
+  {
+    "id": 2,
+    "name": "Chest Press",
+    "category": "Upper Body",
+    "image": "images/chest_press.png",
+    "description": "Targets the pectorals, triceps and front deltoids with guided pushing motions."
+  },
+  {
+    "id": 3,
+    "name": "Lat Pulldown",
+    "category": "Back",
+    "image": "images/lat-pulldown.png",
+    "description": "Develops upper back muscles by pulling a weighted bar downward."
+  },
+  {
+    "id": 4,
+    "name": "Smith Machine",
+    "category": "Full Body",
+    "image": "images/smith.png",
+    "description": "Assisted barbell system that improves stability for squats, presses and rows."
+  },
+  {
+    "id": 5,
+    "name": "Cable Crossover",
+    "category": "Upper Body",
+    "image": "images/polea.png",
+    "description": "Versatile cable system for chest, shoulders and arms using adjustable pulleys."
+  },
+  {
+    "id": 6,
+    "name": "Leg Curl",
+    "category": "Lower Body",
+    "image": "images/leg-curl.png",
+    "description": "Isolates the hamstrings with knee-flexion movements."
+  },
+  {
+    "id": 7,
+    "name": "Leg Extension",
+    "category": "Lower Body",
+    "image": "images/leg.png",
+    "description": "Isolates the quadriceps through controlled leg extensions."
+  },
+  {
+    "id": 8,
+    "name": "Seated Row Machine",
+    "category": "Back",
+    "image": "images/row.png",
+    "description": "Strengthens mid-back and rear deltoids with horizontal pulling."
+  },
+  {
+    "id": 9,
+    "name": "Treadmill",
+    "category": "Cardio",
+    "image": "images/run.png",
+    "description": "Cardio machine for running or walking with variable speed and incline."
+  },
+  {
+    "id": 10,
+    "name": "Elliptical Trainer",
+    "category": "Cardio",
+    "image": "images/bici.png",
+    "description": "Low-impact cardio machine engaging upper and lower body."
+  },
+  {
+    "id": 11,
+    "name": "Stationary Bike",
+    "category": "Cardio",
+    "image": "images/bike.png",
+    "description": "Indoor cycling for endurance and leg strength."
+  },
+  {
+    "id": 12,
+    "name": "Pec Deck",
+    "category": "Upper Body",
+    "image": "images/pec.png",
+    "description": "Chest-focused machine using fly movements for pectoral isolation."
+  },
+  {
+    "id": 13,
+    "name": "Hack Squat Machine",
+    "category": "Lower Body",
+    "image": "images/hack.png",
+    "description": "Guided squat platform that targets quads and glutes with added stability."
+  },
+  {
+    "id": 14,
+    "name": "Shoulder Press Machine",
+    "category": "Upper Body",
+    "image": "images/shoulder.png",
+    "description": "Trains deltoids and triceps with overhead pushing movements."
+  },
+  {
+    "id": 15,
+    "name": "Ab Crunch Machine",
+    "category": "Core",
+    "image": "images/wire.png",
+    "description": "Isolates abdominal muscles using a guided crunch mechanism."
+  }
+]
