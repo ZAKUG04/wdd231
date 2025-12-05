@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8" >
   <meta name="viewport" content="width=device-width,initial-scale=1" >
-  <title>Formulario enviado</title>
+  <title>Form Submitted</title>
   <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
   <main class="shell">
-    <h1>Gracias por tu envío</h1>
+    <h1>Thank you for your submission</h1>
     <div id="results"></div>
-    <p><a href="index.html">← Volver al inicio</a></p>
+    <p><a href="index.html">← Back to home</a></p>
   </main>
 
   <script>
     // read URLSearchParams and render
     const params = new URLSearchParams(window.location.search);
     const out = document.getElementById('results');
+
     if ([...params].length === 0) {
-      out.innerHTML = '<p>No se enviaron datos.</p>';
+      out.innerHTML = '<p>No data was submitted.</p>'; // traducido
     } else {
       const list = document.createElement('dl');
       [...params].forEach(([k,v]) => {

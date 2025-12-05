@@ -43,12 +43,20 @@ document.addEventListener('DOMContentLoaded', () => {
     setContrast(state);
   });
 
-  function setContrast(on) {
-    document.documentElement.style.setProperty('--brand-yellow', on ? '#FFD447' : '#FFD447');
-    document.documentElement.style.setProperty('--brand-black', on ? '#0b0b0b' : '#0b0b0b');
-    // add a body class to flip backgrounds if you want more contrast changes
-    document.body.classList.toggle('alt-contrast', on);
-    contrastToggle.setAttribute('aria-pressed', String(on));
-    localStorage.setItem('slg_contrast', on ? 'on' : 'off');
+function setContrast(on) {
+  if (on) {
+    // Modo contraste ALTO
+    document.documentElement.style.setProperty('--brand-yellow', '#ffea00');
+    document.documentElement.style.setProperty('--brand-black', '#000000');
+    document.body.classList.add("alt-contrast");
+  } else {
+    // Modo normal
+    document.documentElement.style.setProperty('--brand-yellow', '#FFD447');
+    document.documentElement.style.setProperty('--brand-black', '#0b0b0b');
+    document.body.classList.remove("alt-contrast");
   }
+
+  contrastToggle.setAttribute('aria-pressed', String(on));
+  localStorage.setItem('slg_contrast', on ? 'on' : 'off');
+}
 });

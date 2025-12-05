@@ -22,3 +22,7 @@
         font-size: 2.8rem;
     }
 }
+/* Ocultar hamburguesa en desktop */
+.nav-toggle {
+  display: none;
+}

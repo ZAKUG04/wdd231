@@ -34,6 +34,45 @@ body{
 .nav-list{list-style:none;padding:0;margin:0;display:none;flex-direction:column;gap:.5rem}
 .nav-list a{display:block;padding:.45rem .5rem;text-decoration:none;color:var(--brand-black)}
 .nav-toggle{background:transparent;border:0;font-size:1.3rem;padding:.4rem}
+/* === Mobile Dropdown Menu (fuera del header) === */
+
+.main-nav {
+  position: absolute;
+  top: 60px; /* altura aproximada del header */
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  display: none; /* por defecto oculto */
+  z-index: 50;
+  padding: 1rem 0;
+}
+
+.main-nav.open {
+  display: block;
+}
+
+.nav-list a {
+  padding: .9rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+@media (min-width: 900px) {
+  .main-nav {
+    position: static !important;
+    display: block !important;
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: auto;
+  }
+
+  .nav-list {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
 
 /* Hero */
 .hero{padding:1.5rem 0}
@@ -102,17 +141,23 @@ input,select{padding:.6rem .7rem;border:1px solid #ddd;border-radius:6px;font-fa
 }
 
 .machine-card {
-    background: #111;
-    border: 2px solid #FFD447;
-    padding: 1rem;
-    border-radius: 10px;
+  background: #111;
+  border: 2px solid #FFD447;
+  padding: 1rem;
+  border-radius: 10px;
+  min-height: 320px; /* Reservar espacio antes de cargar contenido */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .machine-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+  width: 100%;
+  aspect-ratio: 17 / 15;
+  object-fit: cover;
+  border-radius: 8px;
 }
+
 
 .machine-card h3 {
     margin-top: 0.8rem;
@@ -128,4 +173,24 @@ input,select{padding:.6rem .7rem;border:1px solid #ddd;border-radius:6px;font-fa
 .machine-card .desc {
     margin-top: 0.5rem;
     line-height: 1.4;
+}
+
+body.alt-contrast {
+  background: #000;
+  color: #c0b00a;
+}
+
+body.alt-contrast a {
+  color: #000000;
+}
+
+body.alt-contrast .card,
+body.alt-contrast .machine-card {
+  border-color: #ffea00;
+  background: #111;
+}
+
+body.alt-contrast .btn-primary {
+  background: #ffea00;
+  color: #000;
 }

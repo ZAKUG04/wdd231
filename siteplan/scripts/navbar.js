@@ -8,8 +8,8 @@ export function initNavbar() {
     // Generate navigation items
     navList.innerHTML = `
         <li><a href="index.html">Home</a></li>
-        <li><a href="machine.html">Máquinas</a></li>
-        <li><a href="form-action.html">Formulario</a></li>
+        <li><a href="machine.html">Machines</a></li>
+        <li><a href="form-action.html">Form</a></li>
     `;
 
     // Mobile toggle
