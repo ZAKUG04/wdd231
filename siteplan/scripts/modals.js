@@ -1,4 +1,4 @@
-// modal.js
+// los modasl
 export function initModal() {
   const openBtn = document.getElementById('open-video');
   const dialog = document.getElementById('dialog');

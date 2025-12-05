@@ -1,4 +1,4 @@
-// machine.js (ES Module)
+// lo que hace real la pagina mcchine
 
 async function loadMachines() {
     try {
@@ -11,7 +11,7 @@ async function loadMachines() {
             const card = document.createElement("div");
             card.classList.add("machine-card");
 
-            // Template literal para contenido dinámico
+            // lateral dinamico
             card.innerHTML = `
                 <img 
                     src="${machine.image}" 

@@ -34,16 +34,16 @@ body{
 .nav-list{list-style:none;padding:0;margin:0;display:none;flex-direction:column;gap:.5rem}
 .nav-list a{display:block;padding:.45rem .5rem;text-decoration:none;color:var(--brand-black)}
 .nav-toggle{background:transparent;border:0;font-size:1.3rem;padding:.4rem}
-/* === Mobile Dropdown Menu (fuera del header) === */
+/* === Mobile Dropdown Menu  === */
 
 .main-nav {
   position: absolute;
-  top: 60px; /* altura aproximada del header */
+  top: 60px; 
   left: 0;
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #e6e6e6;
-  display: none; /* por defecto oculto */
+  display: none; 
   z-index: 50;
   padding: 1rem 0;
 }
@@ -145,7 +145,7 @@ input,select{padding:.6rem .7rem;border:1px solid #ddd;border-radius:6px;font-fa
   border: 2px solid #FFD447;
   padding: 1rem;
   border-radius: 10px;
-  min-height: 320px; /* Reservar espacio antes de cargar contenido */
+  min-height: 320px; 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

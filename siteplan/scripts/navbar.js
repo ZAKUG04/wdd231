@@ -1,4 +1,4 @@
-// scripts/navbar.js
+// navbar-las li del header
 
 export function initNavbar() {
     const navList = document.getElementById("nav-list");

@@ -1,4 +1,4 @@
-// main.js (entry module)
+// main.js 
 import { initNavbar } from './navbar.js';
 import { initModal } from './modals.js';
 
@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
   initModal();
 
-  // set footer year (template literal + DOM)
+  // set footer year 
   document.getElementById('year').textContent = new Date().getFullYear();
 
   // populate form with localStorage if exists
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (saved.goal) goalInput.value = saved.goal;
 
   form.addEventListener('submit', (e) => {
-    // allow normal submit (GET) but save to localStorage first
+    
     const payload = {
       name: nameInput.value,
       email: emailInput.value,
